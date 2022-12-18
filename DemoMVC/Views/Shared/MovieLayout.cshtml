@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav style="text-align:right">
+        @Html.ActionLink("Info", "Index", "Movie") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("All", "List", "Movie") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("Find By Rating", "FindByRating", "Movie") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        @Html.ActionLink("Find", "Find", "Movie") &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    </nav>
+    <div style="background-color:lightgreen">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@model DemoMVC.Models.Movie   //We are going to print the data from Movie class
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>
+        <center>Movie Data</center>
+        
+    </h1>
+    <hr />
+    <p>@Html.DisplayNameFor(m=>m.Id) : @Html.DisplayFor(m=>m.Id)</p>
+    <p>@Html.DisplayNameFor(m=>m.Name) : @Html.DisplayFor(m=>m.Name)</p>
+    <p>@Html.DisplayNameFor(m=>m.Year) : @Html.DisplayFor(m=>m.Year)</p>
+    <p>@Html.DisplayNameFor(m=>m.Rating) : @Html.DisplayFor(m=>m.Rating)</p>
+</body>
+</html>

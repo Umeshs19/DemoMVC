@@ -1,0 +1,13 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using(Html.BeginForm("Display","Movie",FormMethod.Post))
+{
+    <p> Enter Movie Id:<input type="text" id="id" name="id" /> </p>
+    <p>
+               <input type="submit" value="Find" />
+
+    </p>
+}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+	<link href="~/css/mainstyles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1><center>Nums Digital</center></h1>
+    <hr />
+    <nav style="text-align:right;background-color:silver">
+        <a href="@Url.Action("Index","Home")">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="@Url.Action("Index","Movie")">Movie</a>
+    </nav>
+    <hr />
+    <div>
+        @RenderBody()
+    </div>
+    <hr />
+    <footer style="text-align:left;font-style:italic">
+        Contact:<br />
+        Lnt Infotech <br />
+        Mahape
+    </footer>
+</body>
+</html>
